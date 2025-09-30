@@ -30,6 +30,7 @@ function turnJiff() {
     search.placeholder = "Search for a Jiff";
     btnSearch.innerHTML = "Click to Generate Jiffs";
     jiffButton.innerHTML = "Switch to GIF";
+    style = backgroundColor = "lightblue";
   } else {
     title.innerHTML = "THE GIF GENERATOR";
     search.placeholder = "Search for a Gif";
