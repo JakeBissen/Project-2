@@ -21,9 +21,11 @@ function turnJiff() {
     jiffButton.innerHTML = "Switch to JIFF";
   }
   
-  document.body.style.backgroundColor = isJiffMode ? "#b2a675ff" : "white";
 
-  document.body.style.backgroundColor = isJiffMode ? "#ffcc00" : "orange";
+  jiffButton.classList.toggle("jiff-hover-jiff", isJiffMode);
+jiffButton.classList.toggle("jiff-hover-gif", !isJiffMode);
+
+ 
 
 }
 
