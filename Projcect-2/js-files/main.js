@@ -28,16 +28,22 @@ function turnJiff() {
   if (isJiffMode) {
     title.innerHTML = "THE JIFF GENERATOR";
     search.placeholder = "Search for a Jiff";
-    btnSearch.innerHTML = "Click to Generate Jiffs";
+    btnSearch.innerHTML = "Click to Generate Jiff";
     jiffButton.innerHTML = "Switch to GIF";
-    style = backgroundColor = "lightblue";
   } else {
     title.innerHTML = "THE GIF GENERATOR";
     search.placeholder = "Search for a Gif";
-    btnSearch.innerHTML = "Click to Generate Gifs";
+    btnSearch.innerHTML = "Click to Generate Gif";
     jiffButton.innerHTML = "Switch to JIFF";
   }
+  
+  document.body.style.backgroundColor = isJiffMode ? "#b2a675ff" : "white";
+
+  document.body.style.backgroundColor = isJiffMode ? "#ffcc00" : "orange";
+
 }
+
+
 
 let imageHere = document.getElementById('js-image-appear-here');
 
@@ -49,7 +55,7 @@ async function generateImg() {
   }
 
   const apiKey = "PmclBFOvDxc7GOSn7wQDXdYm20OSjF99";
-  const url = `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=${encodeURIComponent(query)}&rating=g`;
+  const url = `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=${encodeURIComponent(query)}&rating=r`;
 
   try {
     const response = await fetch(url);

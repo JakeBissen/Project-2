@@ -1,9 +1,21 @@
+body {
+  background-color: rgb(99, 30, 30);
+  transition: background-color 0.5s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .title {
   font-family: Bitcount Grid Single Ink, serif;
   font-weight: 500;
   font-size: 50px;
   text-align: center;
   margin-top: 20px;
+}
+
+body.jiff-mode {
+  background-color: #ffcc00; /* bright yellow for JIFF mode */
 }
 
 .jiff-btn {
@@ -26,6 +38,11 @@
   border: 2px solid white;
 }
 
+.jiff-btn {
+  background-color: rgb(207, 115, 115);
+  /* existing styles */
+}
+
 .search-btn {
   background-color: rgb(255, 255, 255);
   border: 2px solid black;
@@ -43,4 +60,9 @@
   background-color: black;
   color: white;
   border: 2px solid white;
+}
+
+.footer {
+  text-align: center;
+  padding: 300px;
 }/*# sourceMappingURL=style.css.map */
