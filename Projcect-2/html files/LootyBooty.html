@@ -8,7 +8,7 @@
 
       <link rel="stylesheet" href="/Projcect-2/css-files/LootyBooty.css">
 
-    <title>Document</title>
+    <title>Looty Booty</title>
 </head>
 <body>
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,9 +33,37 @@
   </div>
 </nav>
 
+ <div>
+    <h1>Looty Booty</h1>
+    <p>Use this to randomly generate your loot losers.</p>
+    </div>
+
+    <div id="loot-gen-common" class="container row col-4 mx-auto">
+        <label for="commonLootInput" class="form-label">Common Loot</label>
+        <input id="commonLootInput" type="text" class="form-control" placeholder="Generated loot will appear here" title="Generated loot common" readonly>
+        <button type="submit" id="btnCommon" onclick="generateCommon()">Generate Common Loot</button>
+    </div>
+
+    <br><br><br>
+    
+    <div id="loot-gen-rare" class="container row col-4 mx-auto">
+        <label for="rareLootInput" class="form-label">Rare Loot</label>
+        <input id="rareLootInput" type="text" class="form-control" placeholder="Generated loot will appear here" title="Generated loot rare" readonly>
+        <button type="submit" id="btnRare" onclick="generateRare()">Generate Rare Loot</button>
+    </div>
+
+    <br><br><br>
+
+<div id="loot-gen-very-rare" class="container row col-4 mx-auto">
+        <label for="veryRareLootInput" class="form-label">Very Rare Loot</label>
+        <input id="veryRareLootInput" type="text" class="form-control" placeholder="Generated loot will appear here" title="Generated loot very rare" readonly>
+        <button type="submit" id="btnVeryRare" onclick="generateVeryRare()">Generate Very Rare Loot</button>
+    </div>
 
 
 
    <footer class="footer">&copy; 2025 Gif/Jiff Generator</footer>
+
+    <script src="/Projcect-2/js-files/LootyBooty.js"></script>
 </body>
 </html>
