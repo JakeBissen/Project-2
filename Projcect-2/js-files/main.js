@@ -18,15 +18,17 @@ function turnJiff() {
     title.innerHTML = "THE GIF GENERATOR";
     search.placeholder = "Search for a Gif";
     btnSearch.innerHTML = "Click to Generate Gif";
-    jiffButton.innerHTML = "Switch to JIFF";
+    jiffButton.innerHTML = "Switch to JIFF"; 
   }
-  
+
+  //  Flip the button color to contrast with the background
+  jiffButton.style.backgroundColor = isJiffMode ? "#966d96" : "#699269";
 
   jiffButton.classList.toggle("jiff-hover-jiff", isJiffMode);
-jiffButton.classList.toggle("jiff-hover-gif", !isJiffMode);
+  jiffButton.classList.toggle("jiff-hover-gif", !isJiffMode);
 
- 
-
+  //Set body background to match mode
+  document.body.style.backgroundColor = isJiffMode ? "#699269" : "#966d96";
 }
 
 

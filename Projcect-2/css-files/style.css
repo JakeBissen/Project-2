@@ -25,13 +25,19 @@ body.jiff-mode {
 }
 
 .jiff-btn.jiff-hover-gif:hover {
-  background-color: #699269; /* opposite of GIF mode */
+  background-color: #966d96; /* opposite of GIF mode */
   color: rgb(0, 0, 0);
-  border: 2px solid #000000;
+  border: 2px solid #C0C0C0;
 }
 
 .jiff-btn.jiff-hover-jiff:hover {
-  background-color: #966d96; /* opposite of JIFF mode */
+  background-color: #699269; /* opposite of JIFF mode */
+  color: rgb(0, 0, 0);
+  border: 2px solid #C0C0C0;
+}
+
+.jiff-btn {
+  background-color: #699269; /* starting color */
   color: rgb(0, 0, 0);
   border: 2px solid #000000;
 }
