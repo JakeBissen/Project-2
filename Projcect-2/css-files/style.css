@@ -40,7 +40,23 @@ body.jiff-mode {
 
 .jiff-btn {
   background-color: rgb(207, 115, 115);
-  /* existing styles */
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 50vh;
+  width: auto;
+  margin-bottom: 70px;
+}
+
+hr {
+  margin-top: 20px;
 }
 
 .search-btn {
