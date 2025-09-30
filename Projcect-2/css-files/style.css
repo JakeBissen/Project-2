@@ -5,6 +5,7 @@
   font-size: 60px;
   text-align: center;
   margin-top: 20px;
+  background-color: #C0C0C0;
 }
 
 body.jiff-mode {
@@ -24,6 +25,12 @@ body.jiff-mode {
   margin: 20px auto;
 }
 
+.counter {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 .jiff-btn.jiff-hover-gif:hover {
   background-color: #966d96; /* opposite of GIF mode */
   color: rgb(0, 0, 0);
@@ -37,7 +44,7 @@ body.jiff-mode {
 }
 
 .jiff-btn {
-  background-color: #699269; /* starting color */
+  background-color: #966d96; /* starting color */
   color: rgb(0, 0, 0);
   border: 2px solid #000000;
 }

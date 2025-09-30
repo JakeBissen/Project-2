@@ -67,3 +67,52 @@ async function generateImg() {
   }
 }
 
+
+
+
+const MAX_REQUESTS = 100;
+const COOLDOWN_DURATION = 60 * 60 * 1000; // 1 hour
+const cooldownMessage = document.getElementById("cooldown-message");
+
+// Load saved data
+let requestCount = parseInt(localStorage.getItem("requestCount")) || 0;
+let cooldownEndTime = parseInt(localStorage.getItem("cooldownEndTime")) || null;
+
+// Call this when a request is made
+function trackRequest() {
+  requestCount++;
+  localStorage.setItem("requestCount", requestCount);
+
+  if (requestCount >= MAX_REQUESTS) {
+    cooldownEndTime = Date.now() + COOLDOWN_DURATION;
+    localStorage.setItem("cooldownEndTime", cooldownEndTime);
+    startCooldownTimer();
+  }
+}
+
+// Countdown logic
+function startCooldownTimer() {
+  const interval = setInterval(() => {
+    const now = Date.now();
+    const timeLeft = cooldownEndTime - now;
+
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+      requestCount = 0;
+      cooldownEndTime = null;
+      localStorage.removeItem("requestCount");
+      localStorage.removeItem("cooldownEndTime");
+      cooldownMessage.textContent = "You can now generate GIFs again!";
+      setTimeout(() => location.reload(), 3000);
+    } else {
+      const minutes = Math.floor(timeLeft / 60000);
+      const seconds = Math.floor((timeLeft % 60000) / 1000);
+      cooldownMessage.textContent = `Cooldown active: ${minutes}m ${seconds}s remaining`;
+    }
+  }, 1000);
+}
+
+// Start timer if cooldown is active on page load
+if (cooldownEndTime && Date.now() < cooldownEndTime) {
+  startCooldownTimer();
+}
