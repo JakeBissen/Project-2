@@ -7,43 +7,47 @@
 
     */
 
-let allItemDetails = [];
 
-async function preloadItems() {
-  const response = await fetch('https://www.dnd5eapi.co/api/magic-items');
+
+async function loadLootData() {
+  const response = await fetch('/Projcect-2/data/magic-items.json');
   const data = await response.json();
-
-  const validItems = data.results.slice(0, 50); // Limit to 50 for now
-  allItemDetails = await Promise.all(
-    validItems.map(item =>
-      fetch(`https://www.dnd5eapi.co${item.url}`).then(res => res.json())
-    )
-  );
+  return data;
 }
 
-    // --------- common loot generator ----------- /////
+// ------- Generate Common Loot ------- //////
+
 async function generateCommon() {
-  const apiUrl = 'https://www.dnd5eapi.co/api/magic-items';
   try {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-
-    // Fetch full details for each item
-    const itemDetails = await Promise.all(
-      data.results.map(item =>
-        fetch(`https://www.dnd5eapi.co${item.url}`).then(res => res.json())
-      )
-    );
-
-    // Filter by rarity
-    const commonItems = itemDetails.filter(item => item.rarity && item.rarity.name === 'Common');
-
-    // Pick one at random
+    const lootData = await loadLootData();
+    const commonItems = lootData["Common"];
     const randomItem = commonItems[Math.floor(Math.random() * commonItems.length)];
-    document.getElementById('commonLootInput').value = randomItem.name;
+    document.getElementById('commonLootInput').value = randomItem;
   } catch (error) {
-    console.error('Error fetching common loot:', error);
+    console.error('Error loading common loot:', error);
   }
 }
-     let btnCommon = document.getElementById('btnCommon');
-     btnCommon.addEventListener('click', generateCommon);
+
+let btnCommon = document.getElementById('btnCommon');
+btnCommon.addEventListener('click', generateCommon);
+
+
+
+// ------- Generate Uncommon Loot ------- //////
+
+
+async function generateUncommon() {
+  try {
+    const lootData = await loadLootData();
+    const uncommonItems = lootData["Uncommon"];
+    const randomItem = uncommonItems[Math.floor(Math.random() * uncommonItems.length)];
+    document.getElementById('uncommonLootInput').value = randomItem;
+  } catch (error) {
+    console.error('Error loading uncommon loot:', error);
+  }
+}
+
+let btnUncommon = document.getElementById('btnUncommon');
+btnCommon.addEventListener('click', generateUncommon);
+
+
