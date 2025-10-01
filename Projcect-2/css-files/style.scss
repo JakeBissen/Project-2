@@ -10,6 +10,11 @@
     align-items: center;
     margin-top: 20px;
     background-color: #C0C0C0;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+    padding: 10px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 body.jiff-mode {
@@ -94,6 +99,5 @@ hr {
 
 
 .footer{
-    text-align: center;
-    padding: 300px;
+    padding: 2rem;
 }
