@@ -22,6 +22,15 @@ body.jiff-mode {
 }
 
 
+
+.jiff-btn{
+    font-family: Playwrite AU TAS, cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
 .jiff-btn{
     border: 2px solid black;
     border-radius: 10px;
@@ -36,11 +45,6 @@ body.jiff-mode {
     box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
 }
 
-.counter{
-  text-align:center; 
-  margin-top:20px; 
-  font-weight:bold;
-}
 
 .jiff-btn.jiff-hover-gif:hover {
   background-color: #966d96; /* opposite of GIF mode */
@@ -79,6 +83,8 @@ body.jiff-mode {
   object-fit: contain;
 }
 
+
+
 hr {
     margin-top: 20px;
 }
@@ -102,6 +108,11 @@ hr {
     border: 2px solid white;
 }
 
+.btnGene {
+  font-family: "Sixtyfour", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .footer{
     padding: 2rem;
