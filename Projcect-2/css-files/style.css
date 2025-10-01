@@ -29,6 +29,7 @@ body.jiff-mode {
   align-items: center;
   display: block;
   margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .counter {
@@ -58,14 +59,18 @@ body.jiff-mode {
 .img-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
   align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 50vh;
-  width: auto;
-  margin-bottom: 70px;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 hr {

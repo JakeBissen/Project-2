@@ -1,11 +1,4 @@
-/*
-<div id="loot-gen-common" class="container row col-4 mx-auto">
-        <label for="commonLootInput" class="form-label">Common Loot</label>
-        <input id="commonLootInput" type="text" class="form-control" placeholder="Generated loot will appear here" title="Generated loot common" readonly>
-        <button type="submit" id="btnCommon" onclick="generateCommon()">Generate Common Loot</button>
-    </div>
 
-    */
 
 
 
