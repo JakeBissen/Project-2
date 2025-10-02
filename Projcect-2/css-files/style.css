@@ -16,6 +16,7 @@
 
 body.jiff-mode {
   background-color: #699269;
+  overflow-x: hidden;
 }
 
 .jiff-btn {

@@ -1,1 +1,114 @@
-/*# sourceMappingURL=LootBooty.css.map */
+.loot-group {
+  text-decoration: white;
+  color: white;
+    font-size: 20px;
+    
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url('/Projcect-2/Images/Screenshot\ 2025-10-01\ 114343.png');
+    background-size: cover;
+}
+
+.btnCommon{
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.btnCommon {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 20px auto;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
+    background-color: #d3d3d3; 
+}
+
+/* .btnCommon.jiff-hover-gif:hover {
+  background-color: #966d96;
+} maybe add color hover?*/
+
+.btnUncommon{
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.btnUncommon {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 20px auto;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
+    background-color: #3a9234;
+}
+
+.btnRare{
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.btnRare{
+     border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 20px auto;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
+    background-color: #336699; 
+}
+
+.btnVeryRare{
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.btnVeryRare{
+     border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 20px auto;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
+    background-color: #6B327C ; 
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
