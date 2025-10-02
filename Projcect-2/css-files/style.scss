@@ -18,9 +18,11 @@
 }
 
 body.jiff-mode {
-  background-color: #699269ff; 
+  background-color: #966d96;
   overflow-x: hidden !important;
+  width: 100%;
 }
+
 
 
 
@@ -30,6 +32,7 @@ body.jiff-mode {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+   background-color: #699269
 
 }
 
@@ -45,7 +48,10 @@ body.jiff-mode {
     display: block;
     margin: 20px auto;
     box-shadow:  0 0 15px rgba(0, 0, 0, 0.6);
+   
 }
+
+
 
 
 .jiff-btn.jiff-hover-gif:hover {

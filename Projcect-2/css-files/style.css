@@ -15,8 +15,9 @@
 }
 
 body.jiff-mode {
-  background-color: #699269;
+  background-color: #966d96;
   overflow-x: hidden !important;
+  width: 100%;
 }
 
 .jiff-btn {
@@ -24,6 +25,7 @@ body.jiff-mode {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  background-color: #699269;
 }
 
 .jiff-btn {
