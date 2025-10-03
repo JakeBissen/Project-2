@@ -1,9 +1,10 @@
   Hello, my name is Jake Bissen. 
   The project that I am working on is a simple search engine made to find and locate user specific gifs on the web. 
-Upon entering a topic (like "dog"), and proceeding to hit the submit button, the user will get a gif of a dog. 
+Upon entering a topic (like "dog"), and proceeding to hit the submit button, the user will get a gif of a dog. They can also retap the submit button
+to randomly generate more gifs of the same category.
 While offering a simplistic feel in a world of constant pop ups and chaotic imagery, my site is made to provide clarity, with ease of use. 
 Simply enter in the search bar what you are looking for, and the gif(s) will appear if they exist. 
-    I used Css, Javascript, and HTML to aid me in this project. 
+    I used Css, Javascript, HTML, and Sass to aid me in this project. 
 I also used a bit of Json (although not directly used) to help me add my repos. 
 
   I have a few ideas to make my site better.
