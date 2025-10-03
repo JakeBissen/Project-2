@@ -3,7 +3,7 @@
 
 
 async function loadLootData() {
-  const response = await fetch('magic-items.json');
+  const response = await fetch('magic-items.json'); 
   const data = await response.json();
   return data;
 }
