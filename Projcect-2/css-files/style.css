@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 .title {
   font-family: Bitcount Grid Single Ink, serif;
   font-weight: 700;
@@ -12,6 +16,7 @@
   position: relative;
   padding: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
 }
 
 body.jiff-mode {
@@ -60,6 +65,10 @@ body.jiff-mode {
   border: 2px solid #000000;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .img-container img {
   width: 200px;
   height: auto;
@@ -73,8 +82,11 @@ body.jiff-mode {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  max-width: 100%;
   margin-bottom: 16px;
   justify-content: center;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 .gif-box {
@@ -94,7 +106,7 @@ body.jiff-mode {
 }
 
 .gif-box:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
   box-shadow: 0 0 12px rgba(150, 109, 150, 0.6);
 }
 
