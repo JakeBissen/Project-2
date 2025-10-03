@@ -12,10 +12,13 @@ One of witch is to add a D&D (Dungeons and Dragons, a TTRPG) monster randomizer.
 This would allow both new and expiercend DMs (dungeon masters) to have a chance to find randomly generated monsters. 
 There will be options to add a CR range, creatue numbers, and discription/encounter ideas for said monsters. 
 I would also like to add a dice roller and a option to create a loot randomizer, of witch the latter has already been added within another page. 
+  Speading of the loot randomizer, To use, simply click the approiate rarity of the 
+    magic item you would like. Using a self make Json file, it will randomly select an
+  item from a list of over 300 items
 
 This site currently acts as a test to see how I can use APIs (public or custom) to make generators and content.
 
-link to Draw.io: https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G1ltcSQWOO0TVByuO9MFvx7cxs53VNv3Si
+link to outline sketch: https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G1ltcSQWOO0TVByuO9MFvx7cxs53VNv3Si
 
 User Stories:
 1. 
@@ -33,4 +36,8 @@ User Stories:
   2. Wants to look up random D&D gifs
   3. to post in a D&D group chat
 
+4. 
+  1. User
+  2. Wants a random rare magic item
+  3. to get as their reward.
      
