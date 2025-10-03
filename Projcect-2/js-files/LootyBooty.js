@@ -76,3 +76,6 @@ async function generateVeryRare() {
 
 let btnVeryRare = document.getElementById('btnVeryRare');
 btnVeryRare.addEventListener('click', generateVeryRare);
+
+
+// fix-me-text
