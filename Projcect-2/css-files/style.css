@@ -76,6 +76,7 @@ body.jiff-mode {
      object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 40px 80px rgba(216, 59, 221, 0.1);
+  overflow-y: hidden;
 }
 
 .img-container {
@@ -87,6 +88,7 @@ body.jiff-mode {
   justify-content: center;
   text-align: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .gif-box {
